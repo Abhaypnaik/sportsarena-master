@@ -102,7 +102,7 @@ spring:
 # spring:
 #   cloud:
 #     config:
-#       uri: http://localhost:8888
+#       uri: http://3.133.190.144:8888
 #   application:
 #     name: api-gateway
 #   main:

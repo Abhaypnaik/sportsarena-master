@@ -40,7 +40,7 @@ function DetailView () {
     setFormValues({ ...formValues, slotDate: convertedDate });
 }
 const listSubmit = () => {
-//     return fetch("http://localhost:8080/createdslots", {
+//     return fetch("http://3.133.190.144:8080/createdslots", {
 //         headers: {
 //             'Content-Type': 'application/json',
 //             'Accept': 'application/json'
@@ -109,13 +109,13 @@ useEffect(() => {
 // const slotAdd = (slotId) => {
 
   // axios
-  //   .post(`http://localhost:8080/booking-Management/api/v1/newbooking`,)
+  //   .post(`http://3.133.190.144:8080/booking-Management/api/v1/newbooking`,)
 const slotAdd = (slotDetail) => {
    console.log(slotDetail);
   setSelectedSlot(slotDetail);
   
   /*axios
-    .post(`http://localhost:3000/booking`)
+    .post(`http://3.133.190.144:3000/booking`)
     .then((res) => {
       console.log(res.data);
       console.log("Add successfuly");

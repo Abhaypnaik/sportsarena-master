@@ -17,7 +17,7 @@ export function postData(formValues, callback, errorcallback){
 }
 
 // export function getData(config, callback, errorcallback){
-//     axios.get("http://localhost:8080/user/api/v1/newplayer")
+//     axios.get("http://3.133.190.144:8080/user/api/v1/newplayer")
 //     .then(res => {
 //       //do something
 //       if(callback != null){
@@ -33,7 +33,7 @@ export function postData(formValues, callback, errorcallback){
 // }
 
 // export function getData(config, callback, errorcallback){
-//   axios.get("http://localhost:8080/newground")
+//   axios.get("http://3.133.190.144:8080/newground")
 //   .then(res => {
 //     //do something
 //     if(callback != null){

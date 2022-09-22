@@ -39,7 +39,7 @@ const ChatFeature = () => {
     //  const userToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMSJ9.PF5NW2q3qzV5wZJKdD9bn9pVi2y9eJ8JvllJxQgMMUA';
 
     const getdetails = () => {
-        // axios.get(`http://localhost:3000/players?userEmail=${location.state.email}`)
+        // axios.get(`http://3.133.190.144:3000/players?userEmail=${location.state.email}`)
         //     .then((res) => {
         //         console.log(res.data);
         //         let values = res.data[0];

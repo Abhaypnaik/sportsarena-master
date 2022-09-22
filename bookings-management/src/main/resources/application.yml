@@ -36,7 +36,7 @@ eureka:
 #     name: bookings-management
 #   cloud:
 #     config:
-#       uri: http://localhost:8888
+#       uri: http://3.133.190.144:8888
 #       import-check.enabled: false
 # management:
 #   security:

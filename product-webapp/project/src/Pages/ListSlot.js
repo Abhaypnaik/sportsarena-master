@@ -39,7 +39,7 @@ function ListSlot() {
             return listdetails;
         }).catch(err=>console.log(err))
 
-        // return fetch("http://localhost:8080/booking-Management/api/v1/newslot", {
+        // return fetch("http://3.133.190.144:8080/booking-Management/api/v1/newslot", {
         //     headers: {
         //         'Content-Type': 'application/json',
         //         'Accept': 'application/json'
