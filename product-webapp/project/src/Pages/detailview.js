@@ -40,7 +40,7 @@ function DetailView () {
     setFormValues({ ...formValues, slotDate: convertedDate });
 }
 const listSubmit = () => {
-//     return fetch("http://3.133.190.144:8080/createdslots", {
+//     return fetch("http://3.138.158.96:8080/createdslots", {
 //         headers: {
 //             'Content-Type': 'application/json',
 //             'Accept': 'application/json'
@@ -59,7 +59,7 @@ const listSubmit = () => {
 //     }).catch(error => {
 //         throw new Error(error);
 //     })
-return axios.get(`http://3.133.190.144:8080/booking-Management/api/v1/slotslist/groundID/`+location.state.groundID)
+return axios.get(`http://3.138.158.96:8080/booking-Management/api/v1/slotslist/groundID/`+location.state.groundID)
  .then((res)=>{
  var listdetails = res.data;
  console.log(listdetails)
@@ -85,7 +85,7 @@ const sortedList=(list)=>{
 // console.log(location.state.id);
 const getdetailview = () => {
   console.log("id");
-    axios.get(`http://3.133.190.144:8080/user/api/v1/ground/groundID/`+location.state.groundID)
+    axios.get(`http://3.138.158.96:8080/user/api/v1/ground/groundID/`+location.state.groundID)
     .then((res)=>{
         // console.log(res.data[0]);
         let values=[];
@@ -109,13 +109,13 @@ useEffect(() => {
 // const slotAdd = (slotId) => {
 
   // axios
-  //   .post(`http://3.133.190.144:8080/booking-Management/api/v1/newbooking`,)
+  //   .post(`http://3.138.158.96:8080/booking-Management/api/v1/newbooking`,)
 const slotAdd = (slotDetail) => {
    console.log(slotDetail);
   setSelectedSlot(slotDetail);
   
   /*axios
-    .post(`http://3.133.190.144:3000/booking`)
+    .post(`http://3.138.158.96:3000/booking`)
     .then((res) => {
       console.log(res.data);
       console.log("Add successfuly");

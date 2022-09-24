@@ -1,6 +1,6 @@
 // import axios from "axios";
 
-// const baseURL= "http://3.133.190.144:3000";
+// const baseURL= "http://3.138.158.96:3000";
 // export function getDetailView( type,groundID, callback, errorcallback) {
 //     // const url = `${baseURL}/${type}`;
 //     // console.log(url);

@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      host: 3.133.190.144
+      host: 3.138.158.96
       port: 27017
       database: Bookings
   application:
@@ -11,7 +11,7 @@ spring:
 
   rabbitmq:
     port: 5672
-    host: 3.133.190.144
+    host: 3.138.158.96
     username: guest
     password: guest
     
@@ -20,7 +20,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     service-url:
-      defaultZone: http://3.133.190.144:8761/eureka
+      defaultZone: http://3.138.158.96:8761/eureka
 
 
 
@@ -36,7 +36,7 @@ eureka:
 #     name: bookings-management
 #   cloud:
 #     config:
-#       uri: http://3.133.190.144:8888
+#       uri: http://3.138.158.96:8888
 #       import-check.enabled: false
 # management:
 #   security:
