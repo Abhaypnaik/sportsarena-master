@@ -59,7 +59,7 @@ function Signup() {
     };
 
     // const getDetails = () => {
-    //     axios.get("http://3.138.158.96:3000/players/2").then((response) => {
+    //     axios.get("http://3.18.53.7:3000/players/2").then((response) => {
     //         console.log(response)
     //         setFormdetails(response.data)
     //     }).catch((error) => {
@@ -71,7 +71,7 @@ function Signup() {
     const postDetails = () => {
         if (formValues.role === "player") {
             axios
-                .post("http://3.138.158.96:3000/players",
+                .post("http://3.18.53.7:3000/players",
                     { name: "", phoneNumber: "", userEmail: formValues.email, password: formValues.password, role: formValues.role, city: "", state: "", gender: "", profilePhoto: "", favSport: "" })
                 .then((response) => {
                     console.log(response);
@@ -82,7 +82,7 @@ function Signup() {
                 .then(() => { });
         } else {
             axios
-                .post("http://3.138.158.96:3000/vendors",
+                .post("http://3.18.53.7:3000/vendors",
                     { ownerEmail: formValues.email, groundID: "", groundName: "", groundType: "", addressLineOne: "", addressLineTwo: "", city: "", pincode: "", ameneties: "", groundPicture: "", phoneNumber: "", password: formValues.password, role: formValues.role })
                 .then((response) => {
                     console.log(response);
@@ -108,12 +108,12 @@ function Signup() {
             favSport: "Cricket",
             id: 1
         }
-        axios.put("http://3.138.158.96:3000/newplayer/1", values)
+        axios.put("http://3.18.53.7:3000/newplayer/1", values)
             .then(res => console.log(res.data)).catch((error) => { console.log(error) })
     }
 
     const deleteDetails = () => {
-        axios.delete("http://3.138.158.96:3000/newplayer/3").
+        axios.delete("http://3.18.53.7:3000/newplayer/3").
             then((response) => {
                 console.log(response)
                 console.log("Deleted Successfully");
@@ -162,7 +162,7 @@ function Signup() {
 
 
             //     axios
-            //         .post("http://3.138.158.96:3000/players",
+            //         .post("http://3.18.53.7:3000/players",
             //             { name: "", phoneNumber: "", userEmail: formValues.email, password: formValues.password, role: formValues.role, city: "", state: "", gender: "", profilePhoto: "", favSport: "" })
             //         .then((response) => {
             //             console.log(response);
@@ -173,7 +173,7 @@ function Signup() {
             //         .then(() => { });
             // } else {
             //     axios
-            //         .post("http://3.138.158.96:3000/vendors",
+            //         .post("http://3.18.53.7:3000/vendors",
             //             { ownerEmail: formValues.email, groundID: "", groundName: "", groundType: "", addressLineOne: "", addressLineTwo: "", city: "", pincode: "", ameneties: "", groundPicture: "", phoneNumber: "", password: formValues.password, role: formValues.role })
             //         .then((response) => {
             //             console.log(response);

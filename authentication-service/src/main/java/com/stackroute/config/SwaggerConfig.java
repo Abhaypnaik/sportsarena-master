@@ -33,5 +33,5 @@ public class SwaggerConfig {
                 .build();
     }
     //for Swagger api doc generation
-    //http://3.138.158.96:8091/v2/api-docs
+    //http://3.18.53.7:8091/v2/api-docs
 }

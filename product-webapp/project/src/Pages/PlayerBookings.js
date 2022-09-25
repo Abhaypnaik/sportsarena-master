@@ -127,7 +127,7 @@ export default function PlayerBookings() {
      filterData('BOOKED');
        //alert("Booking CANCELLED successfully");
        let data1 = {status:"AVAILABLE"};
-      //  axios.get(`http://3.138.158.96:8080/booking-Management/api/v1/slot/slotID/`+sId)
+      //  axios.get(`http://3.18.53.7:8080/booking-Management/api/v1/slot/slotID/`+sId)
       //  .then((res)=>{
       //   res.data.status="AVAILABLE"
       //   changeSlotStatus(res.data,(res1)=>{

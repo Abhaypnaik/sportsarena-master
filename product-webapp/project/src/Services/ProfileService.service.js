@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://3.138.158.96:8080/user";
+const baseURL = "http://3.18.53.7:8080/user";
 export function getData( callback, errorcallback) {
   axios.get(`${baseURL}/api/v1/player/userEmail/`+sessionStorage.getItem("email"))
     .then(res => {

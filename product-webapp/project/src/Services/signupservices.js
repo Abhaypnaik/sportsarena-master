@@ -1,12 +1,12 @@
 import axios from "axios";
 
 // export default axios.create({
-//     baseURL:"http://3.138.158.96:3000/",
+//     baseURL:"http://3.18.53.7:3000/",
 // });
 
 // async function signupServices(){
 //     const getDetails = async () => {
-//         return await axios.get("http://3.138.158.96:3000/players");
+//         return await axios.get("http://3.18.53.7:3000/players");
 //     }
 //     let msg = "Hello";
 //     console.log(getDetails());
@@ -15,7 +15,7 @@ import axios from "axios";
 
 // export default signupServices;
 // export function getData(config, callback, errorcallback){
-//     axios.get("http://3.138.158.96:3000/players/1")
+//     axios.get("http://3.18.53.7:3000/players/1")
 //     .then(res => {
 //       //do something
 //       if(callback != null){
@@ -30,7 +30,7 @@ import axios from "axios";
 //     })
 // }
 export function postData(type, formValues,callback,  errorcallback){
-    axios.post(`http://3.138.158.96:8080/user/api/v1/${type}`,formValues)
+    axios.post(`http://3.18.53.7:8080/user/api/v1/${type}`,formValues)
     .then(res => {
       //do something
       if(callback != null){
@@ -45,7 +45,7 @@ export function postData(type, formValues,callback,  errorcallback){
     })
 }
 // export function putData( type,id, formValues,callback,  errorcallback){
-//     axios.post(`http://3.138.158.96:3000/${type}/${id}`,formValues)
+//     axios.post(`http://3.18.53.7:3000/${type}/${id}`,formValues)
 //     .then(res => {
 //       //do something
 //       if(callback != null){
