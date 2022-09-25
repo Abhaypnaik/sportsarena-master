@@ -106,12 +106,12 @@ services:
       - rabbitmq
 
     restart: always
-
-
+    
 
   chat-service:
     container_name: chat-service
     build: chat-service/
+    image: abhi2519/sports:chat-service
     hostname: 3.18.53.7
     ports:
       - 8086:8086
