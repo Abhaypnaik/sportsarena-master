@@ -23,6 +23,7 @@ services:
   product-webapp:
     container_name: product-webapp
     build: product-webapp/
+    image: abhi2519/sports:product-webapp
     hostname: 3.18.53.7
     depends_on:
       # - config-server
@@ -35,6 +36,7 @@ services:
   config-server:
     container_name: config-server
     build: config-server/
+    image: abhi2519/sports:config-server
     hostname: 3.18.53.7
     ports:
       - 8888:8888
@@ -44,6 +46,7 @@ services:
   eureka-server:
     container_name: eureka-server
     build: eureka-server/
+    image: abhi2519/sports:eureka-server
     hostname: 3.18.53.7
     # depends_on:
       # - config-server
@@ -55,6 +58,7 @@ services:
   api-gateway:
     image: api-gateway
     build: api-gateway/
+    image: abhi2519/sports:api-gateway
     container_name: api-gateway
     restart: always
     hostname: 3.18.53.7
@@ -69,6 +73,7 @@ services:
   payment:
     container_name: payment
     build: payment/
+    image: abhi2519/sports:payment
     hostname: 3.18.53.7
     depends_on:
       - eureka-server
@@ -81,6 +86,7 @@ services:
   bookings-management:
     container_name: bookings-management
     build: bookings-management/
+    image: abhi2519/sports:bookings-management
     hostname: 3.18.53.7
     ports:
       - 8087:8087
@@ -96,6 +102,7 @@ services:
   authentication-service:
     container_name: authentication-service
     build: authentication-service/
+    image: abhi2519/sports:authentication-service
     hostname: 3.18.53.7
     ports:
       - 8095:8095
@@ -124,6 +131,7 @@ services:
   email-service:
     container_name: email-service
     build: email-service/
+    image: abhi2519/sports:email-service
     hostname: 3.18.53.7
     ports:
       - 8085:8085
@@ -138,6 +146,7 @@ services:
   team-up:
     container_name: team-up
     build: team-up/
+    image: abhi2519/sports:team-up
     hostname: 3.18.53.7
     ports:
       - 8082:8082
@@ -153,6 +162,7 @@ services:
   user-service:
     container_name: user-service
     build: user-service/
+    image: abhi2519/sports:user-service
     hostname: 3.18.53.7
     ports:
       - 8081:8081
